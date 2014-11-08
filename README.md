@@ -1,4 +1,4 @@
-#CAFEtail（チーム名：GIT NULL BOYZ）
+#cafetail（チーム名：GIT NULL BOYZ）
 
 ##ねらい・目的
 1. 問題点：コードの一部分を読んだだけではわからないような、中級者の問題があり得る。
