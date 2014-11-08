@@ -5,17 +5,17 @@ function getlandmark(){
     $client_secret = "B1XF5R03MZAUTI1KDPIXQXZ2KAO50NFQB0Z5QIXAAE3LDCSC";
     $version = "YYYYMMDD";
     $intent        = "browse";
-    $categoryId    = "4bf58dd8d48988d1e0931735"; // この例ではコーヒーショップ
     $limit         = "10";                       // 取得件数(MAX:50)
-    $radius =        "100";  
-    $categoryId = "4bf58dd8d48988d16d941735,4bf58dd8d48988d174941735" ;    //カフェ
+    $radius =        "100";
+    $near   = "Shibuya";  
+    $categoryId = "4bf58dd8d48988d16d941735,4bf58dd8d48988d174941735" ;    //カフェ、コワーキングスペース
 
     // venues search
     $url = "https://api.foursquare.com/v2/venues/search?";
     // パラメーター
     $params = 
         // '&ll=' . "35.655433,139.733492" . 
-    	'&near=' . "渋谷" .
+    	'&near=' . $near .
         '&client_id=' . $client_id . 
         '&client_secret=' . $client_secret .
         '&categoryId=' . $categoryId .
@@ -29,11 +29,11 @@ function getlandmark(){
     // 配列に変換
     $res_in_array = json_decode( $res_in_json, true);
 
-    return $url;
+    return $res_in_json;
  
 }
 
-$url = getlandmark();
-print $url;
+$res_in_json = getlandmark();
+print $res_in_json;
 
 ?>
