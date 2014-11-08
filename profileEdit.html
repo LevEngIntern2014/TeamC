@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Template</title>
+	<link rel="stylesheet" href="css/style.css">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+    <link href="css/select2.css" rel="stylesheet"/>
+    <script src="js/select2.js"></script>
+
+	<script>
+      $(document).ready(function(){
+      	$("#place").select2();
+      });
+	</script>
+</head>
+<body>
+	<header>
+		<div class="h_wrapper">
+			<div class="title">cafetail</div>
+			<div class="username"><a href="#">username</a></div>
+		</div>
+	</header>
+
+	<div class="wrapper">
+		
+		<h1>Area</h1>
+
+		<p>あなたの作業エリアを指定してください。</p>
+		<select multiple name="place" id="place">
+			<option value="Shibuya">渋谷</option>
+			<option value="gotanda">五反田</option>
+			<option value="nakano">中野</option>
+			<option value="matida">町田</option>
+		</select>
+
+
+
+
+	</div>
+
+
+	<footer>
+		<div class="footer">
+			© 2014 Git NULL BOYZ
+		</div>
+	</footer>
+</body>
+</html>
