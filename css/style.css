@@ -175,8 +175,16 @@ header .h_wrapper .username {
 .wrapper .Items .boxItem .button {
   text-align: right;
 }
+/* line 102, ../sass/style.scss */
+.wrapper .minict_wrapper ul {
+  float: left;
+}
+/* line 105, ../sass/style.scss */
+.wrapper .minict_wrapper li {
+  margin-left: 0;
+}
 
-/* line 103, ../sass/style.scss */
+/* line 112, ../sass/style.scss */
 footer {
   width: 100%;
   height: 80px;
