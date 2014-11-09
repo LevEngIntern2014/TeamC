@@ -1,13 +1,12 @@
-<?php
+﻿<?php
 
-function getlandmark(){
+function getlandmark($near){
     $client_id = "WERMHHOZAOCGJ3M1ZMVOPKLDNDIARKFLWT5WC5RR3KEELFH5";
     $client_secret = "B1XF5R03MZAUTI1KDPIXQXZ2KAO50NFQB0Z5QIXAAE3LDCSC";
     $version = "YYYYMMDD";
     $intent        = "browse";
     $limit         = "10";                       // 取得件数(MAX:50)
-    $radius =        "100";
-    $near   = "Shibuya";  
+    $radius =        "100"; 
     $categoryId = "4bf58dd8d48988d16d941735,4bf58dd8d48988d174941735" ;    //カフェ、コワーキングスペース
 
     // venues search
@@ -33,7 +32,7 @@ function getlandmark(){
  
 }
 
-$res_in_array = getlandmark();
+$res_in_array = getlandmark('渋谷');
 // var_dump($res_in_array["response"]["venues"][0]["name"]);
 
 for ($i = 0; $i < 10; $i++ ){
