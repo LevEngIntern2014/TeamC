@@ -31,12 +31,12 @@ li{
 }
 
 input#submit_button {
- 	background: #acfaea;
+ 	background: #11c0a9;
 	border: 1px solid #DDD;
 	border-radius: 8px;
 	-moz-border-radius: 8px;
 	-webkit-border-radius: 8px;
-	color: #777;
+	color: #FFF;
 	width: 100px;
 	padding: 10px 0;
 	cursor: pointer;
@@ -65,6 +65,10 @@ header{
 			position: absolute;
 			font-size: 30px;
 			color: #acfaea;
+			background: url("../images/titlelogo.png");
+			width: 162px;
+			height: 48px;
+			text-indent:-9999px;
 		}
 		.username{
 			right: 50px;

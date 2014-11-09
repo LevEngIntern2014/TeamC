@@ -101,12 +101,12 @@ li {
 
 /* line 33, ../sass/style.scss */
 input#submit_button {
-  background: #acfaea;
+  background: #11c0a9;
   border: 1px solid #DDD;
   border-radius: 8px;
   -moz-border-radius: 8px;
   -webkit-border-radius: 8px;
-  color: #777;
+  color: #FFF;
   width: 100px;
   padding: 10px 0;
   cursor: pointer;
@@ -141,15 +141,19 @@ header .h_wrapper .title {
   position: absolute;
   font-size: 30px;
   color: #acfaea;
+  background: url("../images/titlelogo.png");
+  width: 162px;
+  height: 48px;
+  text-indent: -9999px;
 }
-/* line 69, ../sass/style.scss */
+/* line 73, ../sass/style.scss */
 header .h_wrapper .username {
   right: 50px;
   line-height: 50px;
   position: absolute;
   color: #EEE;
 }
-/* line 75, ../sass/style.scss */
+/* line 79, ../sass/style.scss */
 header .h_wrapper .edit {
   right: 0;
   line-height: 50px;
@@ -157,28 +161,28 @@ header .h_wrapper .edit {
   text-decoration: underline;
 }
 
-/* line 84, ../sass/style.scss */
+/* line 88, ../sass/style.scss */
 .wrapper {
   width: 700px;
   margin: 30px auto;
   color: #777;
 }
-/* line 88, ../sass/style.scss */
+/* line 92, ../sass/style.scss */
 .wrapper a {
   color: #11c0a9;
   text-decoration: underline;
 }
-/* line 94, ../sass/style.scss */
+/* line 98, ../sass/style.scss */
 .wrapper .Items .boxItem {
   border: 1px solid #333;
   padding: 10px;
   margin-bottom: 10px;
 }
-/* line 98, ../sass/style.scss */
+/* line 102, ../sass/style.scss */
 .wrapper .Items .boxItem .title {
   color: #11c0a9;
 }
-/* line 103, ../sass/style.scss */
+/* line 107, ../sass/style.scss */
 .wrapper .Items .boxItem .user {
   background: #AAA;
   height: 40px;
@@ -186,48 +190,48 @@ header .h_wrapper .edit {
   padding: 10px;
   margin: 20px 0 20px 0;
 }
-/* line 109, ../sass/style.scss */
+/* line 113, ../sass/style.scss */
 .wrapper .Items .boxItem .user div {
   float: left;
   color: #555;
   margin-right: 30px;
 }
-/* line 115, ../sass/style.scss */
+/* line 119, ../sass/style.scss */
 .wrapper .Items .boxItem .button {
   text-align: right;
 }
-/* line 122, ../sass/style.scss */
+/* line 126, ../sass/style.scss */
 .wrapper .minict_wrapper ul {
   float: left;
 }
-/* line 125, ../sass/style.scss */
+/* line 129, ../sass/style.scss */
 .wrapper .minict_wrapper li {
   margin-left: 0;
 }
-/* line 130, ../sass/style.scss */
+/* line 134, ../sass/style.scss */
 .wrapper .reserveA {
   width: 500px;
   margin: 0 auto;
   border-bottom: 1px solid #AAA;
 }
-/* line 134, ../sass/style.scss */
+/* line 138, ../sass/style.scss */
 .wrapper .reserveA thead {
   border-bottom: 1px solid #AAA;
   font-size: 1.1em;
   line-height: 1.3em;
 }
-/* line 139, ../sass/style.scss */
+/* line 143, ../sass/style.scss */
 .wrapper .reserveA thead tr th {
   text-align: center;
   width: 200px;
 }
-/* line 147, ../sass/style.scss */
+/* line 151, ../sass/style.scss */
 .wrapper .reserveA tbody tr td {
   text-align: center;
   line-height: 1.3em;
 }
 
-/* line 158, ../sass/style.scss */
+/* line 162, ../sass/style.scss */
 footer {
   width: 100%;
   height: 80px;
