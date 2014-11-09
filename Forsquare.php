@@ -15,7 +15,7 @@ function getlandmark(){
     // パラメーター
     $params = 
         // '&ll=' . "35.655433,139.733492" . 
-    	'&near=' . $near .
+        '&near=' . $near .
         '&client_id=' . $client_id . 
         '&client_secret=' . $client_secret .
         '&categoryId=' . $categoryId .
@@ -29,11 +29,18 @@ function getlandmark(){
     // 配列に変換
     $res_in_array = json_decode( $res_in_json, true);
 
-    return $res_in_json;
+    return $res_in_array;
  
 }
 
-$res_in_json = getlandmark();
-print $res_in_json;
+$res_in_array = getlandmark();
+// var_dump($res_in_array["response"]["venues"][0]["name"]);
+
+for ($i = 0; $i < 10; $i++ ){
+    echo $res_in_array["response"]["venues"][$i]["name"];
+}
+
+// echo $res_in_json;
+
 
 ?>
