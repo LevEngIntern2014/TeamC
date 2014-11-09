@@ -30,6 +30,20 @@ li{
 	margin-left: 20px;
 }
 
+input#submit_button {
+ 	background: #acfaea;
+	border: 1px solid #DDD;
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px;
+	color: #777;
+	width: 100px;
+	padding: 10px 0;
+	cursor: pointer;
+	margin-top: 20px;
+}
+
+
 .clear{
 	clear: both;
 }
@@ -39,7 +53,7 @@ header{
 	height: 50px;
 	background : #363332;
 	a{
-		color: #EEE;
+		color: #acfaea;
 	}
 	.h_wrapper{
 		width: 700px;
@@ -53,10 +67,16 @@ header{
 			color: #acfaea;
 		}
 		.username{
-			right: 0;
+			right: 50px;
 			line-height: 50px;
 			position: absolute;
 			color: #EEE;
+		}
+		.edit{
+			right: 0;
+			line-height: 50px;
+			position: absolute;
+			text-decoration: underline;
 		}
 	}
 }
@@ -106,6 +126,32 @@ header{
 			margin-left: 0;
 		}
 	}
+	//reserveA
+	.reserveA{
+		width: 500px;
+		margin: 0 auto;
+		border-bottom: 1px solid #AAA;
+		thead{
+			border-bottom: 1px solid #AAA;
+			font-size: 1.1em;
+			line-height: 1.3em;
+			tr{
+				th{
+					text-align: center;
+					width: 200px;
+				}
+			}
+		}
+		tbody{
+			tr{
+				td{
+					text-align: center;
+					line-height: 1.3em;
+				}
+			}
+		}
+	}
+
 }
 
 
