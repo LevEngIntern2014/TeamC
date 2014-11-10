@@ -18,6 +18,19 @@
 		<h1>Reserve Answer</h1>
 
 		<p><span class="aUsername">kmdr</span>さんからカフェへ行く日程が以下の候補で届いています。</p>
+
+		<table class="reserveA">
+			<thead>
+				<tr>
+					<th></th>
+					<th>場所</th>
+					<th>開始時間</th>
+					<th>終了</th>
+					<th></th>
+				</tr>
+			</thead>
+			<tbody>
+
 		<?php 			
 			mb_internal_encoding("UTF-8");
 			$link = mysql_connect('localhost', 'root', '');
@@ -33,18 +46,26 @@
 
 			$query = mysql_query("select event_id from reserve where questioner_name = 'kmdr'");
 
+			
+			$number = 1;
 			while($fetch = mysql_fetch_array($query, MYSQL_ASSOC)){
 
 
 				$schedule = mysql_query("SELECT * from schedule where event_id = '".$fetch['event_id']."' group by day,time_start");
 				while($sche = mysql_fetch_assoc($schedule)){
-				echo $sche['day']. "　";
-				echo $sche['time_start']. "~";
-				echo $sche['time_end'];
-				echo "<a>この日に決定する</a><br />";
+					echo "<tr>";
+					echo "<td>候補".$number."</td>";
+					echo "<td>".$sche['day']. "</td>";
+					echo "<td>".$sche['time_start']. "</td>";
+					echo "<td>".$sche['time_end']."</td>";
+					echo "<td><a href='#'>決定する</a></td>";
+					echo "</tr>";
+
+					$number = $number + 1;
 				// echo $old_area_name_fetch['area_name']. "、";
-}
+				}
 			}
+
 
 
 			// foreach ($place as $key => $value) {
@@ -69,7 +90,8 @@
 
 
 		?>
-
+			</tbody>
+		</table>
 
 
 <!-- 		<table class="reserveA">
