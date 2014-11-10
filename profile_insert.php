@@ -9,7 +9,7 @@
 	<header>
 		<div class="h_wrapper">
 			<div class="title">cafetail</div>
-			<div class="username"><a href="#">username</a></div>
+			<div class="username"><a href="community.php">username</a></div>
 		</div>
 
 	</header>

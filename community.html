@@ -33,40 +33,13 @@
 				<li><a href="#tab3">小田原</a></li>
 			</ul>
 
+
 			<div class="Items" id="tab1">
 
 				<div class="boxItem">
 
-					<?php
 
-					function getlandmark(){
-					    $user_name = "kinme";
-					    // venues search
-					    $url = "http://teratail.com/api/users/$user_name/questions?offset=2&limit=2";
-					    $res_in_json = file_get_contents($url);
-					    // 配列に変換
-					    $res_in_array = json_decode( $res_in_json, true);
-					    // var_dump($res_in_json);
-					    return $res_in_array;
-					 
-					}
-					$res_in_array = getlandmark();
-					// var_dump($res_in_array);
-					echo $res_in_array["questions"][0]["accepted"];
-					$accepted = $res_in_array["questions"][0]["accepted"];
-
-					if ($accepted == "受付中") {
-					    echo $res_in_array["questions"][0]["id"];
-					    echo $res_in_array["questions"][0]["display_name"];    
-					    echo $res_in_array["questions"][0]["title"];
-					    echo $res_in_array["questions"][0]["body"];
-					    echo $res_in_array["questions"][0]["body_str"];
-
-					} 
-					?>
-
-
-					<h2 class="title"><?php echo $res_in_array["questions"][0]["title"]; ?></h2>
+					<h2 class="title">1toggleに似た動作なんですが実装方法を教えて下さい</h2>
 					<div class="text">
 						<p>やりたいことは、
 						<br>
